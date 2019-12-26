@@ -1,0 +1,6 @@
+{
+  "presets": ["react", "env", "stage-2"],
+  "plugins": [
+    ["babel-plugin-webpack-alias", {"config": "${PWD}/config/aliases/index.js"}]
+  ]
+}

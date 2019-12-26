@@ -1,0 +1,10 @@
+@value colors: "@CSS/colors.css";
+@value RED, DARK_GREY from colors;
+
+.mainFooter{
+  width: 100%;
+  background-color: DARK_GREY;
+  color: white;
+  padding: 2rem 15px;
+}
+

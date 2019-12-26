@@ -1,0 +1,37 @@
+@value colors: "@CSS/colors.css";
+@value RED, BLUE from colors;
+@value breakpoints: "@CSS/breakpoints.css";
+@value MD from breakpoints;
+
+:global {
+  @import './normalize.css';
+  @import './typography.css';
+
+  *{
+    box-sizing: border-box;
+    outline: none;
+    touch-action: manipulation;
+  }
+
+  html,body{
+    background-color: #fefefe;
+    position: relative;
+    min-width: 320px;
+  }
+
+  main{
+    padding: 60px 0 0;
+  }
+
+  a{
+    color: BLUE;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+
+  /*** MEDIA QUERIES ***/
+  @media only screen and (min-width: MD) {
+    a:hover{color: RED;}
+  }
+}
+
